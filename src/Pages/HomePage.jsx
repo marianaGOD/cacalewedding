@@ -1,11 +1,9 @@
 import React from "react";
-import titleImg from "./images/lavanda.png";
-import cacaletop from "./images/cacaleimg.jpg";
+import titleImg from "../assets/images/lavanda.png";
 
 export default function HomePage() {
   return (
     <div className="homepage-container">
-
       <div className="title-container">
         <img className="lavanda-img" src={titleImg} alt="" />
         <p>Catarina & Alexandre</p>
@@ -28,6 +26,7 @@ export default function HomePage() {
           placeat voluptatibus temporibus omnis ad?
         </p>
       </div>
+      
     </div>
   );
 }
