@@ -26,32 +26,76 @@ export default function BidDay() {
         <Map />
       </div>
 
-      <div className="parking">
-        <h2>Estacionamento</h2>
+      <div className="hotels">
+        <div>
+          <h2>Alojamento</h2>
+        </div>
+        <div className="cards">
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://turisver.pt/wp-content/uploads/2022/08/Sheraton-Lisboa.png"
+            />
+            <Card.Body>
+              <Card.Title>Sheraton</Card.Title>
+              <Card.Text>Bom e barato</Card.Text>
+              <Button
+                variant="secondary"
+                onClick={() =>
+                  openExternalSite(
+                    "https://www.marriott.com/pt-br/hotels/lissi-sheraton-lisboa-hotel-and-spa/overview/"
+                  )
+                }
+              >
+                Visitar Site
+              </Button>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://turisver.pt/wp-content/uploads/2022/08/Sheraton-Lisboa.png"
+            />
+            <Card.Body>
+              <Card.Title>Sheraton</Card.Title>
+              <Card.Text>Bom e barato</Card.Text>
+              <Button
+                variant="secondary"
+                onClick={() =>
+                  openExternalSite(
+                    "https://www.marriott.com/pt-br/hotels/lissi-sheraton-lisboa-hotel-and-spa/overview/"
+                  )
+                }
+              >
+                Visitar Site
+              </Button>
+            </Card.Body>
+          </Card>
+          <Card style={{ width: "18rem" }}>
+            <Card.Img
+              variant="top"
+              src="https://turisver.pt/wp-content/uploads/2022/08/Sheraton-Lisboa.png"
+            />
+            <Card.Body>
+              <Card.Title>Sheraton</Card.Title>
+              <Card.Text>Bom e barato</Card.Text>
+              <Button
+                variant="secondary"
+                onClick={() =>
+                  openExternalSite(
+                    "https://www.marriott.com/pt-br/hotels/lissi-sheraton-lisboa-hotel-and-spa/overview/"
+                  )
+                }
+              >
+                Visitar Site
+              </Button>
+            </Card.Body>
+          </Card>
+        </div>
       </div>
 
-      <div className="hotels">
-        <h2>Alojamento</h2>
-        <Card style={{ width: "18rem" }}>
-          <Card.Img
-            variant="top"
-            src="https://turisver.pt/wp-content/uploads/2022/08/Sheraton-Lisboa.png"
-          />
-          <Card.Body>
-            <Card.Title>Sheraton</Card.Title>
-            <Card.Text>Bom e barato</Card.Text>
-            <Button
-              variant="secondary"
-              onClick={() =>
-                openExternalSite(
-                  "https://www.marriott.com/pt-br/hotels/lissi-sheraton-lisboa-hotel-and-spa/overview/"
-                )
-              }
-            >
-              Visitar Site
-            </Button>
-          </Card.Body>
-        </Card>
+      <div className="parking">
+        <h2>Estacionamento</h2>
       </div>
     </div>
   );

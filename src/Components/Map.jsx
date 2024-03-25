@@ -21,11 +21,11 @@ export default function Map() {
   const [selectedMarker, setSelectedMarker] = useState(null);
 
   return (
-    <div className="map">
+    <div className="map-container">
       {isLoaded && (
         <>
           <GoogleMap
-            mapContainerClassName="map_container"
+            mapContainerClassName="maps-embeded"
             center={center}
             zoom={16}
           >
@@ -45,7 +45,7 @@ export default function Map() {
               >
                 <div>
                   <p className="marker-title">Catarina & Alexandre</p>
-                  <p>R. Alto da Maceira, nº 2</p>
+                  <p>R. Alto da Maceira, nº 81</p>
                 </div>
               </InfoWindow>
             )}
