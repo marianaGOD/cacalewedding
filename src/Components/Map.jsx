@@ -45,7 +45,7 @@ export default function Map() {
               >
                 <div>
                   <p className="marker-title">Catarina & Alexandre</p>
-                  <p>R. Alto da Maceira, nº 2</p>
+                  <p>R. Alto da Maceira, nº 81</p>
                 </div>
               </InfoWindow>
             )}

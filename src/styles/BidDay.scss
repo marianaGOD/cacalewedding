@@ -1,5 +1,14 @@
 .bigday-container {
   // background-color: lightblue;
+
+  .hotels {
+    .cards {
+      display: flex;
+      .card {
+        margin: 10px;
+      }
+    }
+  }
 }
 
 /* Google Maps styling */
