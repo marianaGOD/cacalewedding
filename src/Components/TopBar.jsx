@@ -9,7 +9,9 @@ export default function TopBar() {
       <button className="top-buttons" onClick={() => nav("/historia")}>
         A Nossa História
       </button>
-      <button className="top-buttons">O Grande Dia</button>
+      <button className="top-buttons" onClick={() => nav("/dia")}>
+        O Grande Dia
+      </button>
     </div>
   );
 }

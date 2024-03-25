@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import TopBar from "./Components/TopBar";
 import Form from "./Components/Form";
 import StoryPage from "./Pages/StoryPage";
+import BidDay from "./Pages/BigDay";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/form" element={<Form />} />
         <Route path="/historia" element={<StoryPage />} />
+        <Route path="/dia" element={<BidDay />} />
       </Routes>
     </>
   );

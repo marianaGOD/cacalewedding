@@ -1,0 +1,25 @@
+.bigday-container {
+  // background-color: lightblue;
+}
+
+/* Google Maps styling */
+.map {
+  .map_container {
+    width: 100vh;
+    height: 400px;
+  }
+  .subtitle {
+    font-weight: 100;
+    font-size: small;
+  }
+
+  .marker-title {
+    font-weight: 800;
+  }
+
+  @media (max-width: 600px) {
+    .map-container__map {
+      height: 40vh;
+    }
+  }
+}
