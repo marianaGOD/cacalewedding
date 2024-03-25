@@ -21,11 +21,11 @@ export default function Map() {
   const [selectedMarker, setSelectedMarker] = useState(null);
 
   return (
-    <div className="map">
+    <div className="map-container">
       {isLoaded && (
         <>
           <GoogleMap
-            mapContainerClassName="map_container"
+            mapContainerClassName="maps-embeded"
             center={center}
             zoom={16}
           >

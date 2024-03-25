@@ -12,8 +12,8 @@
 }
 
 /* Google Maps styling */
-.map {
-  .map_container {
+.map-container {
+  .maps-embeded {
     width: 100vh;
     height: 400px;
   }
@@ -25,10 +25,22 @@
   .marker-title {
     font-weight: 800;
   }
+}
 
-  @media (max-width: 600px) {
-    .map-container__map {
-      height: 40vh;
+@media (max-width: 600px) {
+  .bigday-container {
+    width: 40vh;
+    .hotels {
+      .cards {
+        display: block;
+      }
+    }
+  }
+
+  /* Google Maps styling */
+  .map-container {
+    .maps-embeded {
+      width: 100%;
     }
   }
 }

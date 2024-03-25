@@ -26,10 +26,6 @@ export default function BidDay() {
         <Map />
       </div>
 
-      <div className="parking">
-        <h2>Estacionamento</h2>
-      </div>
-
       <div className="hotels">
         <div>
           <h2>Alojamento</h2>
@@ -96,6 +92,10 @@ export default function BidDay() {
             </Card.Body>
           </Card>
         </div>
+      </div>
+
+      <div className="parking">
+        <h2>Estacionamento</h2>
       </div>
     </div>
   );
