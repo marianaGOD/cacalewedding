@@ -44,3 +44,21 @@
     }
   }
 }
+
+@media (min-width: 1025px) {
+  .bigday-container {
+    //width: 40vh;
+    .hotels {
+      .cards {
+        display: block;
+      }
+    }
+  }
+
+  /* Google Maps styling */
+  .map-container {
+    .maps-embeded {
+      width: 100%;
+    }
+  }
+}
