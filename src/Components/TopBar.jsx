@@ -1,6 +1,6 @@
 import React from "react";
 import StoryPage from "../Pages/StoryPage";
-import { useNavigate, Link} from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import titleImg from "../assets/images/lavanda.png";
 import lettering from "../assets/images/lettering.png";
 
@@ -39,7 +39,7 @@ export default function TopBar() {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link active" aria-current="page">
+              <Link to="/" className="nav-link" aria-current="page">
                 Início
               </Link>
             </li>
