@@ -1,15 +1,18 @@
 @import url("https://fonts.cdnfonts.com/css/vogue");
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=GFS+Didot&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
 
 body {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(83, 93, 53, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-image: url("/src/assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Optional: for a parallax-like effect */
 }
+
+
 
 .homepage-container {
   position: relative; /* Needed for the absolute positioning of the pseudo-element */
@@ -21,124 +24,30 @@ body {
   min-height: 100vh;
 }
 
-.homepage-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/src/assets/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5; /* Set the opacity of the background image here */
-  z-index: -1;
-}
 
-/* Ensure other container elements are positioned relative to the parent, not the pseudo-element */
-.title-container,
-.announcement-container,
-.lavanda-img,
-.buttons-container,
-.picture-container {
-  position: relative; /* This ensures these elements are on top of the pseudo-element */
-  z-index: 1; /* Higher than the pseudo-element */
-}
 
 .title-container {
-  background-color: rgba(110, 126, 58, 0.57); /* Soft, translucent green */
+  background-color: rgba(228, 220, 239, 0.8); /* Increase opacity for better contrast */
   color: white;
-  width: 80%; /* Maintain width, but allow for height adjustments */
-  margin-top: 600px; /* Adjust top margin to reduce space, auto centers horizontally */
+  width: 50%;
+  margin-top: 800px;
   margin-bottom: 100px;
-  padding: 40px 20px; /* Added padding for spacing around the content */
+  padding: 40px 20px;
   display: flex;
-  font-family: "Vogue", serif;
-  font-weight: 100;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-size: xxx-large; /* Consider using a specific size in px or rem for consistency */
+  font-size: 7em;
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  line-height: 1.2; /* Adjusted for better readability and spacing between lines */
+  line-height: 1.2;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds depth and focus */
-}
-.data-container {
-  font-size: medium;
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.announcement-container {
-  background-color: #b2a4d485;
-  color: white;
-  width: 80%;
-  margin-top: 50px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
- font-family: "GFS Didot", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
-}
-
-.lavanda-img {
-  height: 80px;
-  width: 200px;
-  background-color: transparent;
-  margin-top: 40px;
-  padding-top: 40px;
-  margin-bottom: 20px;
-}
-
-.top-container {
-  display: flex;
-  justify-content: space-between; /* Align children to opposite ends */
-  align-items: center; /* Center-align items vertically */
-  width: 100%; /* Adjust this as needed to fit your layout */
-  padding: 10px;
-  background-color: rgba(110, 126, 58, 0.57);
-  
-}
-
-.top-buttons {
-  background-color: #f3e5f5; /* Maintaining the pale lavender to match the delicate theme */
-  border: 1px solid #a8b2a1; /* Lighter border color for a more delicate look */
-  color: #535d35; /* Dark color for text to ensure readability */
-  font-family: "Special Elite", sans-serif; /* Keep the unique font for character */
-  font-size: 0.9rem; /* Slightly smaller font for a more refined appearance */
-  padding: 8px 16px; /* Adjust padding for a better fit */
-  cursor: pointer;
-  transition: all 0.3s ease; /* Smooth transition for all properties */
-  border-radius: 8px; /* Rounded corners for a softer look */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  margin: 0 5px; /* Adjust margin for consistency */
-}
-
-.top-buttons:hover {
-  background-color: #e4dcef; /* Slightly darker lavender on hover for an interactive feel */
-  color: #404040; /* Darker color for text to ensure contrast */
-  transform: translateY(-2px); /* Slight lift effect for interactivity */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover for a "lifted" effect */
-}
-
-.logo-container {
-  display: flex;
-  justify-content: flex-start; /* Align image to the left */
-  align-items: center; /* Center-align items vertically */
-  /* No specific height needed unless you want to enforce one */
-}
-
-.button-container {
-  display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
-  align-items: center; /* Center-align items vertically */
-  gap: 15px; /* Maintain gap between buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Enhanced for better legibility */
 }
 
 .rsvp-button {
@@ -178,3 +87,39 @@ body {
   font-style: normal;
   text-align: justify;
 }
+
+#mainNavigation a {
+      font-family: 'Cabin', sans-serif;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      text-shadow:1px 1px 2px rgba(0,0,0,0.4);
+    }
+    
+    .nav-item a{
+      color:#dfdfdf;
+      background-color: #535d3556;
+      
+    }
+    .nav-item a:hover {
+      color:#fff
+    }
+    .nav-item{
+      min-width:12vw;
+    }
+    #mainNavigation {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      z-index:123;
+      padding-bottom:120px;
+      
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+    
+    
