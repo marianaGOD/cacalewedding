@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import TopBar from "./Components/TopBar";
 import Form from "./Components/Form";
@@ -8,6 +8,7 @@ import BidDay from "./Pages/BigDay";
 import { useEffect, useState } from "react";
 
 function App() {
+  const location = useLocation();
   const [topBarHeight, setTopBarHeight] = useState(0);
 
   useEffect(() => {
@@ -17,6 +18,15 @@ function App() {
       setTopBarHeight(topBarElement.offsetHeight);
     }
   }, []);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      document.body.classList.add("no-blur");
+    } else {
+      document.body.classList.remove("no-blur");
+    }
+  }, [location]);
+
   return (
     <>
       <TopBar />

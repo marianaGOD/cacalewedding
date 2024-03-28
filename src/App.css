@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=GFS+Didot&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 
-
 body {
   background-image: url("/src/assets/images/bg.jpg");
   background-repeat: no-repeat;
@@ -12,6 +11,21 @@ body {
   background-attachment: fixed; /* Optional: for a parallax-like effect */
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px); /* Apply the blur effect */
+  z-index: -1;
+}
+
+/* USED TO REMOVE BLUR by adding .no-blur class*/
+.no-blur::before {
+  backdrop-filter: none;
+}
 
 
 .homepage-container {
