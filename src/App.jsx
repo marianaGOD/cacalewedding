@@ -5,6 +5,8 @@ import TopBar from "./Components/TopBar";
 import Form from "./Components/Form";
 import StoryPage from "./Pages/StoryPage";
 import BidDay from "./Pages/BigDay";
+import KnowMore from "./Pages/KnowMore";
+
 import { useEffect, useState } from "react";
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
           <Route path="/form" element={<Form />} />
           <Route path="/historia" element={<StoryPage />} />
           <Route path="/dia" element={<BidDay />} />
+          <Route path="/mais" element={<KnowMore />} />
         </Routes>
       </div>
     </>

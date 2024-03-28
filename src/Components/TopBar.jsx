@@ -54,7 +54,7 @@ export default function TopBar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="" className="nav-link">
+              <Link to="/mais" className="nav-link">
                 Saber Mais
               </Link>
             </li>
