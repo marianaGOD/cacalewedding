@@ -22,6 +22,11 @@ body::before {
   z-index: -1;
 }
 
+/*To hide the scroll bar but still be able to scroll*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* USED TO REMOVE BLUR by adding .no-blur class*/
 .no-blur::before {
   backdrop-filter: none;
@@ -44,8 +49,10 @@ body::before {
   background-color: rgba(228, 220, 239, 0.8); /* Increase opacity for better contrast */
   color: white;
   width: 50%;
+  /*
   margin-top: 800px;
   margin-bottom: 100px;
+  */
   padding: 40px 20px;
   display: flex;
   font-family: 'Cabin', sans-serif;
