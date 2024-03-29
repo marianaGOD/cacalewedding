@@ -11,7 +11,7 @@ export default function BidDay() {
 
   return (
     <div className="bigday-container">
-      <div className="planning">
+      <div className="planning bd-card">
         <h2>Plano do dia</h2>
         <div className="activities">
           <p>17h00 Cerimónia</p>
@@ -21,12 +21,12 @@ export default function BidDay() {
         </div>
       </div>
 
-      <div className="bd-maps">
+      <div className="bd-maps bd-card">
         <h2>Como chegar:</h2>
         <Map />
       </div>
 
-      <div className="hotels">
+      <div className="hotels bd-card">
         <div>
           <h2>Alojamento</h2>
         </div>

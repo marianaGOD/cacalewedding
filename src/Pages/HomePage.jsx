@@ -3,6 +3,7 @@ import raminhos from "../assets/images/raminhos.png";
 import CustomCountdown from "../Components/Countdown";
 import { Drawer } from "antd";
 
+// https://w9vs6ivp.forms.app/cale-wedding-test
 export default function HomePage() {
   const [isOpen, setOpen] = useState(false);
   // Calculate the target date
@@ -36,7 +37,7 @@ export default function HomePage() {
       >
         <iframe
           title="Survey"
-          src="https://w9vs6ivp.forms.app/cale-wedding-test"
+          src="https://forms.gle/ZC2rCoJE4FgSDBPc8"
           style={{
             width: "100%",
             height: "calc(100% - 3px)",
