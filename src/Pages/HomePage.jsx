@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import raminhos from "../assets/images/raminhos.png";
 import CustomCountdown from "../Components/Countdown";
+import { Drawer } from "antd";
 
 export default function HomePage() {
+  const [isOpen, setOpen] = useState(false);
   // Calculate the target date
   const currentDate = new Date();
   const year =
@@ -19,7 +21,29 @@ export default function HomePage() {
         <CustomCountdown date={targetDate} />
         <br />
       </div>
-      <button className="rsvp-button">Confirmar Presença</button>
+      <button className="rsvp-button" onClick={() => setOpen(true)}>
+        Confirmar Presença
+      </button>
+
+      <Drawer
+        title="Survey"
+        placement="right"
+        onClose={() => setOpen(false)}
+        open={isOpen}
+        size="large"
+      >
+        <iframe
+          title="Survey"
+          src="https://w9vs6ivp.forms.app/cale-wedding-test"
+          style={{
+            width: "100%",
+            height: "calc(100% - 3px)",
+            overflow: "hidden",
+          }}
+        >
+          Loading…
+        </iframe>
+      </Drawer>
     </div>
   );
 }

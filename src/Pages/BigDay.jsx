@@ -93,10 +93,6 @@ export default function BidDay() {
           </Card>
         </div>
       </div>
-
-      <div className="parking">
-        <h2>Estacionamento</h2>
-      </div>
     </div>
   );
 }

@@ -32,6 +32,10 @@ body::-webkit-scrollbar {
   backdrop-filter: none;
 }
 
+.ant-drawer .ant-drawer-body {
+  overflow: hidden !important;
+}
+
 
 .homepage-container {
   position: relative; /* Needed for the absolute positioning of the pseudo-element */

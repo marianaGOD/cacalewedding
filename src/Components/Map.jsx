@@ -13,7 +13,6 @@ const mapCenter = {
 };
 
 const wedding = {
-  // coordenadas para a morada
   lat: 38.693806,
   lng: -9.431314,
 };
@@ -134,7 +133,6 @@ export default function Map() {
               </InfoWindow>
             )}
           </GoogleMap>
-          <p className="subtitle">Rua Alto da Maceira, nº 81, Cascais</p>
         </>
       )}
     </div>
