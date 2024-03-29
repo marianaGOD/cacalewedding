@@ -1,9 +1,15 @@
 import React from "react";
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from "swiper";
+// Import Swiper styles
+import "swiper/css"; // core Swiper
+import "swiper/css/navigation"; // Navigation module
+import "swiper/css/pagination"; // Pagination module
+
+
+// Assuming your StoryPageStyles.scss is correctly set up
+import "../styles/StoryPageStyles.scss";
 
 export default function StoryPage() {
   const slidesData = [
@@ -13,7 +19,7 @@ export default function StoryPage() {
       text: "Lorem ipsum dolor sit amet, consectetur adipscing elit, sed do eiusmod tempor incididut ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       imageUrl: "https://unsplash.it/1920/500?image=11",
     },
-    // Repeat for other years or generate similarly structured objects
+    // Add more slides here
   ];
 
   return (
@@ -24,16 +30,20 @@ export default function StoryPage() {
           modules={[Navigation, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
-          navigation
+          navigation={true}
           pagination={{ clickable: true }}
+          // Swiper 7.x.x onward requires "enabled" property for breakpoints
+          breakpoints={{
+            // when window width is >= 768px
+            768: {
+              direction: "horizontal",
+            },
+          }}
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide
               key={index}
-              style={{
-                backgroundImage: `url(${slide.imageUrl})`,
-                backgroundSize: "cover",
-              }}
+              style={{ backgroundImage: `url(${slide.imageUrl})` }}
             >
               <div className="swiper-slide-content">
                 <span className="timeline-year">{slide.year}</span>
