@@ -29,8 +29,7 @@ export default function HomePage() {
       </button>
 
       <Drawer
-        title="Survey"
-        placement="right"
+        placement="bottom"
         onClose={() => setOpen(false)}
         open={isOpen}
         size="large"

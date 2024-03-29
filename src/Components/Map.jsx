@@ -100,7 +100,6 @@ export default function Map() {
               >
                 <div>
                   <p className="marker-title">Estacionamento #1</p>
-                  <p>### Descrição do Estacionamento ###</p>
                 </div>
               </InfoWindow>
             )}
@@ -114,7 +113,6 @@ export default function Map() {
               >
                 <div>
                   <p className="marker-title">Estacionamento #2</p>
-                  <p>### Descrição do Estacionamento ###</p>
                 </div>
               </InfoWindow>
             )}
@@ -128,7 +126,6 @@ export default function Map() {
               >
                 <div>
                   <p className="marker-title">Estacionamento #3</p>
-                  <p>### Descrição do Estacionamento ###</p>
                 </div>
               </InfoWindow>
             )}
