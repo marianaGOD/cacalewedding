@@ -15,12 +15,14 @@ export default function HomePage() {
 
   return (
     <div className="homepage-container">
+      {/* 
       <div className="title-container">
         <img src={raminhos} alt="raminhos" style={{ height: "200px" }} />
         <br />
         <CustomCountdown date={targetDate} />
         <br />
       </div>
+      */}
       <button className="rsvp-button" onClick={() => setOpen(true)}>
         Confirmar Presença
       </button>
