@@ -1,6 +1,26 @@
+// CUMMONS
+.bd-card {
+  background-color: rgba(182, 209, 181, 0.1); /* Adjust color and opacity */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: calc(100vh + 40px);
+
+  h2 {
+    color: wheat;
+  }
+}
+
 .bigday-container {
   // background-color: lightblue;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .planning {
+    .activities {
+        color: #000;
+    }
+  }
   .hotels {
     .cards {
       display: flex;
@@ -29,7 +49,7 @@
 
 @media (max-width: 600px) {
   .bigday-container {
-    width: 40vh;
+    max-width: 40%;
     .hotels {
       .cards {
         display: block;

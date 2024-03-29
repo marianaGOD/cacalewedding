@@ -19,6 +19,7 @@ body::before {
   top: 0;
   bottom: 0;
   backdrop-filter: blur(10px); /* Apply the blur effect */
+  background: rgba(0, 0, 0, 0.3); 
   z-index: -1;
 }
 
@@ -26,10 +27,14 @@ body::before {
 body::-webkit-scrollbar {
   display: none;
 }
+.route-container::-webkit-scrollbar {
+  display: none;
+}
 
 /* USED TO REMOVE BLUR by adding .no-blur class*/
 .no-blur::before {
   backdrop-filter: none;
+  background: rgba(0, 0, 0, 0); 
 }
 
 .ant-drawer .ant-drawer-body {
