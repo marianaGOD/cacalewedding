@@ -32,7 +32,14 @@ function App() {
   return (
     <>
       <TopBar />
-      <div style={{ paddingTop: `${topBarHeight}px` }}>
+      <div
+        className="route-container"
+        style={{
+          marginTop: `${topBarHeight}px`,
+          maxHeight: `calc(100vh - ${topBarHeight}px)`,
+          overflow: "auto",
+        }}
+      >
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/form" element={<Form />} />
