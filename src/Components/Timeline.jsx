@@ -32,15 +32,20 @@ const Timeline = () => {
   ];
 
   return (
-    <div className="timeline">
+    <div
+      className="timeline"
+      data-aos="fade-up"
+      data-aos-delay="100"
+      data-aos-duration="1000"
+    >
       {years.map(({ year, image, text }) => (
-        <div key={year} className="timeline-item" data-aos="fade-up">
+        <div key={year} className="timeline-item">
           <div className="timeline-content">
             <img src={image} alt={`photo ${year}`} />
             <div className="year-cont">
               <strong>{year}</strong>
-            </div>{" "}
-            <div className="text-cont">: {text}</div>
+            </div>
+            <div className="text-cont">{text}</div>
           </div>
         </div>
       ))}
