@@ -1,10 +1,9 @@
-import React from "react";
-import StoryPage from "../Pages/StoryPage";
+import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import titleImg from "../assets/images/lavanda.png";
 import lettering from "../assets/images/lettering.png";
 
 export default function TopBar() {
+  const [isOpen, setIsOpen] = useState(false);
   const nav = useNavigate();
   return (
     <div id="mainNavigation">
@@ -26,35 +25,55 @@ export default function TopBar() {
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown"
-            aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
           >
             <span className="navbar-toggler-icon"></span>{" "}
             <span className="align-middle">Menu</span>
           </button>
         </div>
         <div
-          className="text-center mt-3 collapse navbar-collapse"
+          className={`text-center mt-3 collapse navbar-collapse ${
+            isOpen ? "show" : ""
+          }`}
           id="navbarNavDropdown"
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link" aria-current="page">
+              <Link
+                to="/"
+                className="nav-link"
+                aria-current="page"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 Início
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/historia" className="nav-link">
+              <Link
+                to="/historia"
+                className="nav-link"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 A Nossa História
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/dia" className="nav-link">
+              <Link
+                to="/dia"
+                className="nav-link"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 O Grande Dia
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/mais" className="nav-link">
+              <Link
+                to="/mais"
+                className="nav-link"
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 Saber Mais
               </Link>
             </li>

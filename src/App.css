@@ -139,6 +139,10 @@ body::-webkit-scrollbar {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+.navbar-toggler {
+  border: 0 !important;
+}
+
 .nav-item a {
   color: #dfdfdf;
   background-color: #535d3556;
@@ -173,12 +177,13 @@ body::-webkit-scrollbar {
 .timeline-item {
   position: relative;
   width: 50%;
+  max-width: 40%;
   padding: 10px 40px;
   box-sizing: border-box;
 }
 
 .timeline-item:nth-child(odd) {
-  left: 0;
+  left: 10%;
 }
 
 .timeline-item:nth-child(even) {
@@ -203,6 +208,7 @@ body::-webkit-scrollbar {
 @media (max-width: 600px) {
   .timeline-item {
     width: 100%;
+    max-width: 100%;
     left: 0 !important;
   }
 

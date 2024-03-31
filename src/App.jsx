@@ -9,6 +9,9 @@ import KnowMore from "./Pages/KnowMore";
 
 import { useEffect, useState } from "react";
 
+
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 function App() {
   const location = useLocation();
   const [topBarHeight, setTopBarHeight] = useState(0);
