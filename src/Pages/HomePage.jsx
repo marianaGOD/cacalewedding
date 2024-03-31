@@ -36,7 +36,7 @@ export default function HomePage() {
       >
         <iframe
           title="Survey"
-          src="https://forms.gle/ZC2rCoJE4FgSDBPc8"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScoHvNik1RcgfgaKTbwbYYfdQVm9brZjrB4ErX2REgZ3eqc1Q/viewform"
           style={{
             width: "100%",
             height: "calc(100% - 3px)",
