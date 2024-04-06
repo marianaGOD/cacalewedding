@@ -16,18 +16,12 @@ export default function HomePage() {
 
   return (
     <div className="homepage-container">
-      {/* 
-      <div className="title-container">
-        <img src={raminhos} alt="raminhos" style={{ height: "200px" }} />
-        <br />
-        <CustomCountdown date={targetDate} />
-        <br />
+      <div className="rsvp-container">
+        <p>7 de Setembro de 2024</p>
+        <button className="rsvp-button" onClick={() => setOpen(true)}>
+          Confirmar Presença
+        </button>
       </div>
-      */}
-      <button className="rsvp-button" onClick={() => setOpen(true)}>
-        Confirmar Presença
-      </button>
-
       <Drawer
         placement="bottom"
         onClose={() => setOpen(false)}

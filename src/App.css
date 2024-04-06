@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=GFS+Didot&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.cdnfonts.com/css/delicate');
+@import url('https://fonts.cdnfonts.com/css/witches-friend-script');
+@import url('https://fonts.cdnfonts.com/css/emmeline');
+@import url('https://fonts.cdnfonts.com/css/rakelyn');
 
 body {
   background-image: url("/src/assets/images/bg.jpg");
@@ -65,7 +69,7 @@ body::-webkit-scrollbar {
   */
   padding: 40px 20px;
   display: flex;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Rakelyn', sans-serif;  
   font-weight: 400;
   font-style: normal;
   font-size: 7em;
@@ -78,45 +82,7 @@ body::-webkit-scrollbar {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Enhanced for better legibility */
-}
-
-.rsvp-button {
-  background-color: #f3e5f5; /* Soft, pale lavender for a delicate, thematic appearance */
-  border: 2px solid #a8b2a1; /* Slightly thicker border for more definition */
-  color: #535d35; /* Deep green for contrast and readability */
-  font-family: "GFS Didot", "Libre Caslon Text", serif; /* Switch to a more elegant, wedding-appropriate font */
-  font-size: 1rem; /* Increase font size for better legibility */
-  padding: 12px 24px; /* More generous padding for a larger, more clickable area */
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Updated for subtle animation effects */
-  border-radius: 10px; /* Slightly larger radius for a softer, more modern look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Deeper shadow for a subtle 3D effect */
-  display: inline-block; /* Ensure button text is centered and allows for transform */
-  text-transform: uppercase; /* Optional: Adds a stylistic touch */
-  letter-spacing: 1px; /* Increase letter spacing for a more distinguished look */
-  outline: none; /* Remove the outline to clean up focus states */
-  margin: 100px;
-}
-
-.rsvp-button:hover, .rsvp-button:focus {
-  background-color: #e4dcef; /* Lighter on hover/focus for interactive feedback */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover/focus for a "lifted" effect */
-  transform: translateY(-2px); /* Slight upward movement on hover/focus for interactivity */
-  border-color: #9ca8a1; /* Slightly darker border on hover/focus for contrast */
-}
-.honeymoon-container {
-  background-color: #b2a4d485;
-  color: white;
-  width: 80%;
-  margin-top: 30px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
- font-family: "GFS Didot", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: justify;
+  text-shadow: 2px 2px 8px rgb(255, 255, 255); /* Enhanced for better legibility */
 }
 
 #mainNavigation {
@@ -125,36 +91,97 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100%;
   z-index: 123;
-  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.486) 0%, rgba(0, 0, 0, 0.274) 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #mainNavigation a {
-  font-family: 'Cabin', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-family: 'Rakelyn', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #8F9092; /* Soft grey for a delicate touch */
+  padding: 15px; /* Slightly larger for touch targets */
 }
 
 .navbar-toggler {
-  border: 0 !important;
+  border: 1px solid #e8e4d0; /* Pastel green border */
+  background-color: #afaf83; /* Beige background */
+  color: #606060;
 }
 
 .nav-item a {
-  color: #dfdfdf;
-  background-color: #535d3556;
+  color: #8F9092; /* Soft grey */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for readability */
+  display: block;
+  margin: 5px 0; /* Adjusted for spacing */
 }
 
 .nav-item a:hover {
-  color: #fff;
+  color: #e8e4d0; /* White text */
+  background-color:#e8e4d0;/* Pastel green background */
 }
 
 .nav-item {
-  min-width: 12vw;
+  padding: 5px 0;
 }
+
+.rsvp-container {
+  background-color: rgba(248, 247, 255, 0.9); /* Semi-transparent lavender for a soft overlay */
+  width: 75%;
+  height: auto; /* Adjusted for content size */
+  margin: 2vh auto 30px; /* Centered with vertical margin */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+   display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Centers children horizontally in the container */
+  justify-content: flex-start; /* Aligns children to the start of the container */
+}
+
+.rsvp-container p  {
+  color: #8F9092; /* Dark grey for better readability */
+  font-family: 'Rakelyn', sans-serif;
+  font-size: xx-large;
+  background-color: rgba(255, 255, 255, 0.6); /* Light overlay for readability */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  text-align: center;
+
+}
+
+.rsvp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: 'Rakelyn', sans-serif;  
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+
+
+
+.rsvp-button:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.rsvp-button:active,
+.rsvp-button:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
     
 
 .timeline {
