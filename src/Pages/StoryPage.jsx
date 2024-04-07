@@ -3,8 +3,10 @@ import Timeline from "../Components/Timeline";
 
 export default function StoryPage() {
   return (
-    <Timeline />
-  )
+    <div className="story-container">
+      <Timeline />
+    </div>
+  );
 }
 
 

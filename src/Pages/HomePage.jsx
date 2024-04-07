@@ -18,6 +18,7 @@ export default function HomePage() {
     <div className="homepage-container">
       <div className="rsvp-container">
         <p>
+          <img src={raminhos} alt="" style={{ width: "200px" }} /> <br />
           Temos vindo a escrever uma história linda, que começou quando e onde
           menos esperávamos. Queremos continuar esta jornada e dar o próximo
           passo, para sempre enquanto amigos e namorados. Por isso, após 10 anos

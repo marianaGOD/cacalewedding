@@ -6,6 +6,7 @@
 @import url("https://fonts.cdnfonts.com/css/witches-friend-script");
 @import url("https://fonts.cdnfonts.com/css/emmeline");
 @import url("https://fonts.cdnfonts.com/css/rakelyn");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
   background-image: url("/src/assets/images/bg.jpg");
@@ -125,15 +126,9 @@ body::-webkit-scrollbar {
 }
 
 .rsvp-container {
-  background-color: rgba(
-    248,
-    247,
-    255,
-    0.39
-  ); /* Semi-transparent lavender for a soft overlay */
-  width: 75%;
+  background-color: rgba(24, 66, 24, 0.39); /* Semi-transparent lavender for a soft overlay */
+  width: 50%;
   height: auto; /* Adjusted for content size */
-  margin: 2vh auto 30px; /* Centered with vertical margin */
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -144,19 +139,17 @@ body::-webkit-scrollbar {
 }
 
 .rsvp-container p {
-  color: #8f9092; /* Dark grey for better readability */
-  font-family: "Emmeline", sans-serif;
-  font-size: x-large;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.808
-  ); /* Light overlay for readability */
+  color: #2f3031; /* Dark grey for better readability */
+  font-family: "Libre Baskerville", serif;
+  font-size: large;
+  background-color: rgb(255, 255, 255); /* Light overlay for readability */
   padding: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  text-align: justify;
+  text-align: center;
+  height: 45%;
+  text-shadow: #181818;
+line-height: 2;
 }
 
 .rsvp-container p p {
@@ -196,6 +189,11 @@ body::-webkit-scrollbar {
     0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
 }
 
+.story-container {
+  background-image: url(./assets/images/texture4.jpg);
+
+}
+
 .timeline {
   position: relative;
   padding: 20px 0;
@@ -210,7 +208,7 @@ body::-webkit-scrollbar {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #ddd;
+  background: #ffffff;
 }
 
 .timeline-item {
@@ -231,10 +229,12 @@ body::-webkit-scrollbar {
 
 .timeline-item .timeline-content {
   position: relative;
-  background: #f9f9f9;
+  background: #ffffff;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Emmeline", sans-serif;
+  text-align: center;
 }
 
 .timeline-item .timeline-content img {
@@ -355,6 +355,7 @@ body::-webkit-scrollbar {
  /* border: 1px solid #fec195;*/
   border-radius: 8px;
   filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+  font-family: "Emmeline", sans-serif;
 }
 
 .btn-presence:hover {
@@ -477,3 +478,4 @@ body::-webkit-scrollbar {
     transform: rotate(0);
   }
 }
+
