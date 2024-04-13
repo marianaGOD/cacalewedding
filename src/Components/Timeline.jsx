@@ -18,16 +18,16 @@ const Timeline = () => {
   }, []);
 
   const years = [
-    { year: 2014, image: ph2014, text: "Your text for 2014" },
-    { year: 2015, image: ph2015, text: "Your text for 2015" },
-    { year: 2016, image: ph2016, text: "Your text for 2016" },
-    { year: 2017, image: ph2017, text: "Your text for 2017" },
-    { year: 2018, image: ph2018, text: "Your text for 2018" },
-    { year: 2019, image: ph2019, text: "Your text for 2019" },
-    { year: 2020, image: ph2020, text: "Your text for 2020" },
-    { year: 2021, image: ph2021, text: "Your text for 2021" },
-    { year: 2022, image: ph2022, text: "Your text for 2022" },
-    { year: 2023, image: ph2023, text: "Your text for 2023" },
+    { year: 2014, image: ph2014 },
+    { year: 2015, image: ph2015 },
+    { year: 2016, image: ph2016 },
+    { year: 2017, image: ph2017 },
+    { year: 2018, image: ph2018 },
+    { year: 2019, image: ph2019 },
+    { year: 2020, image: ph2020 },
+    { year: 2021, image: ph2021 },
+    { year: 2022, image: ph2022 },
+    { year: 2023, image: ph2023 },
     // Continue with the pattern for the rest of the years you want to include
   ];
 
@@ -45,7 +45,6 @@ const Timeline = () => {
             <div className="year-cont">
               <strong>{year}</strong>
             </div>
-            <div className="text-cont">{text}</div>
           </div>
         </div>
       ))}
