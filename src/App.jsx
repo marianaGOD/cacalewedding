@@ -44,7 +44,7 @@ function App() {
         <div
           className="route-container"
           style={{
-            marginTop: `${topBarHeight + navBarHeight + 10}px`,
+            marginTop: `${topBarHeight + navBarHeight + 60}px`,
             maxHeight: `calc(100vh - ${topBarHeight}px)`,
             overflow: "auto",
           }}

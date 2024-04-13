@@ -232,31 +232,13 @@ line-height: 2;
 @media (max-width: 600px) {
   .app-wrapper {
     position: relative; /* Needed to correctly position the pseudo-element */
-    background-image: url("/src/assets/images/bg.jpg");
+    
     background-position: center center; /* Center the background image */
     background-size: cover; /* Cover the viewport without stretching the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     height: 90vh; /* Minimum height of 100% of the viewport height */
     width: 100%; /* Full width */
     overflow-x: hidden; /* Prevent horizontal overflow */
-  }
-  .app-wrapper::before {
-    content: ""; /* Required for the pseudo-element to be generated */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: inherit; /* Use the same background as the parent */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    /* Apply the blur effect */
-    filter: blur(8px);
-    /* Ensure the pseudo-element doesn’t block interaction with the content */
-    z-index: -1;
   }
   #mainNavigation {
     position: relative;
