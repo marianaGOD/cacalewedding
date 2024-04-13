@@ -30,8 +30,10 @@ function App() {
   useEffect(() => {
     if (location.pathname === "/") {
       document.body.classList.add("no-blur");
+      document.body.classList.remove("paper-bg");
     } else {
       document.body.classList.remove("no-blur");
+      document.body.classList.add("paper-bg");
     }
   }, [location]);
 

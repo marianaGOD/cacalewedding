@@ -16,16 +16,12 @@ body {
   background-attachment: fixed; /* Optional: for a parallax-like effect */
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  backdrop-filter: blur(10px); /* Apply the blur effect */
-  background: rgba(0, 0, 0, 0.3);
-  z-index: -1;
+.paper-bg {
+  background-image: url(./assets/images/texture4.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*To hide the scroll bar but still be able to scroll*/
@@ -34,12 +30,6 @@ body::-webkit-scrollbar {
 }
 .route-container::-webkit-scrollbar {
   display: none;
-}
-
-/* USED TO REMOVE BLUR by adding .no-blur class*/
-.no-blur::before {
-  backdrop-filter: none;
-  background: rgba(0, 0, 0, 0);
 }
 
 .ant-drawer .ant-drawer-body {
@@ -187,11 +177,6 @@ line-height: 2;
 .rsvp-button:focus {
   box-shadow: 0 4px 3px 1px #fcfcfc, 0 6px 8px #d6d7d9, 0 -4px 4px #cecfd1,
     0 -6px 4px #fefefe, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-}
-
-.story-container {
-  background-image: url(./assets/images/texture4.jpg);
-
 }
 
 .timeline {
