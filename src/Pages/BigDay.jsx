@@ -21,10 +21,41 @@ export default function BidDay() {
           <div className="planning bd-card">
             <h2>Plano do dia</h2>
             <div className="activities">
-              <p>17h00 Cerimónia</p>
-              <p>18h30 Cocktail</p>
-              <p>20h30 Jantar</p>
-              <p>23h30 Festa</p>
+              <div className="activity">
+                <img
+                  src="src\assets\day-timeline\cake_1.png"
+                  alt=""
+                  className="timeline-img"
+                />
+                <p>17h00 Cerimónia</p>
+              </div>
+
+              <div className="activity">
+                <img
+                  src="src\assets\day-timeline\cocktail_1.png"
+                  alt=""
+                  className="timeline-img"
+                />
+                <p>18h30 Cocktail</p>
+              </div>
+
+              <div className="activity">
+                <img
+                  src="src\assets\day-timeline\dinner_1.png"
+                  alt=""
+                  className="timeline-img"
+                />
+                <p>20h30 Jantar</p>
+              </div>
+
+              <div className="activity">
+                <img
+                  src="src\assets\day-timeline\party_1.png"
+                  alt=""
+                  className="timeline-img"
+                />
+                <p>23h30 Festa</p>
+              </div>
             </div>
           </div>
         </Col>

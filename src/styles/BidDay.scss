@@ -1,87 +1,52 @@
-// CUMMONS
-
-// .bd-card {
-//   background-color: rgba(182, 209, 181, 0.1); /* Adjust color and opacity */
-//   padding: 20px;
-//   margin-top: 20px;
-//   border-radius: 10px;
-//   width: calc(100vh + 40px);
-// 
-//   h2 {
-//     color: wheat;
-//   }
-// }
-// 
-// .bigday-container {
-//   // background-color: lightblue;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   .planning {
-//     .activities {
-//         color: #000;
-//     }
-//   }
-//   .hotels {
-//     .cards {
-//       display: flex;
-//       .card {
-//         margin: 10px;
-//       }
-//     }
-//   }
-// }
-// 
-// /* Google Maps styling */
-// .map-container {
-//   .maps-embeded {
-//     width: 100vh;
-//     height: 400px;
-//   }
-//   .subtitle {
-//     font-weight: 100;
-//     font-size: small;
-//   }
-// 
-//   .marker-title {
-//     font-weight: 800;
-//   }
-// }
-// 
-// @media (max-width: 600px) {
-//   .bigday-container {
-//     max-width: 40%;
-//     .hotels {
-//       .cards {
-//         display: block;
-//       }
-//     }
-//   }
-// 
-//   /* Google Maps styling */
-//   .map-container {
-//     .maps-embeded {
-//       width: 100%;
-//     }
-//   }
-// } 
-// 
-
 .bd-card {
-  background-color: rgba(182, 209, 181, 0.1);
+  background-color: rgb(255 255 255 / 63%);
   padding: 20px;
   margin-top: 20px;
   border-radius: 10px;
 
   h2 {
-    color: wheat;
+    font-family: "Emmeline", sans-serif;
+    font-weight: 800;
+  }
+}
+
+/* TIME LINE OF THE DAY*/
+.timeline-img {
+  max-width: 200px;
+}
+
+.activities {
+  p {
+    font-family: "Emmeline", sans-serif;
+  }
+  display: flex;
+  justify-content: space-around;
+
+  .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 /* Google Maps styling */
-   .map-container {
-     .maps-embeded {
-      height: 50vh;
-      border-radius: 10px;
-     }
-   }
+.map-container {
+  .maps-embeded {
+   height: 50vh;
+   border-radius: 10px;
+  }
+}
+
+/* Adjustments for small screens */
+@media (max-width: 600px) {
+.bd-card {
+  background-color: rgb(255 255 255 / 40%);
+}
+.activities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
