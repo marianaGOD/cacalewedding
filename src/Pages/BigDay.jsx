@@ -44,6 +44,9 @@ export default function BidDay() {
                   src="src\assets\day-timeline\dinner_1.png"
                   alt=""
                   className="timeline-img"
+                  style={{
+                    transform: "scale(0.9)",
+                  }}
                 />
                 <p>20h30 Jantar</p>
               </div>
