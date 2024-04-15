@@ -33,7 +33,6 @@ function App() {
     } else {
       document.body.classList.add("paper-bg");
     }
-    console.log(routeContainerRef);
     if (routeContainerRef.current) {
       routeContainerRef.current.scrollTop = 0; // Reset scroll to the top of the div
     }
