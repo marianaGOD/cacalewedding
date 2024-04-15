@@ -7,13 +7,13 @@ import StoryPage from "./Pages/StoryPage";
 import BidDay from "./Pages/BigDay";
 import KnowMore from "./Pages/KnowMore";
 
-import { useEffect, useState } from "react";
-
+import { useEffect, useState, useRef } from "react";
 
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
   const location = useLocation();
+  const routeContainerRef = useRef(null);
   const [topBarHeight, setTopBarHeight] = useState(0);
   const [navBarHeight, setNavBarHeight] = useState(0);
 
@@ -29,11 +29,13 @@ function App() {
 
   useEffect(() => {
     if (location.pathname === "/") {
-      document.body.classList.add("no-blur");
       document.body.classList.remove("paper-bg");
     } else {
-      document.body.classList.remove("no-blur");
       document.body.classList.add("paper-bg");
+    }
+    console.log(routeContainerRef);
+    if (routeContainerRef.current) {
+      routeContainerRef.current.scrollTop = 0; // Reset scroll to the top of the div
     }
   }, [location]);
 
@@ -42,10 +44,11 @@ function App() {
       <div className="app-wrapper">
         <TopBar />
         <div
+          ref={routeContainerRef}
           className="route-container"
           style={{
-            marginTop: `${topBarHeight + navBarHeight + 60}px`,
-            maxHeight: `calc(100vh - ${topBarHeight}px)`,
+            marginTop: `${topBarHeight + navBarHeight + 30}px`,
+            maxHeight: `calc(100vh - ${topBarHeight}px - 80px)`,
             overflow: "auto",
           }}
         >
