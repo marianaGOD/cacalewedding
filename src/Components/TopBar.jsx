@@ -29,8 +29,12 @@ export default function TopBar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
           >
-            <span className="navbar-toggler-icon"></span>{" "}
-            <span className="align-middle">Menu</span>
+            <img
+              src="src\assets\icons\hamburguer_3.png"
+              alt=""
+              style={{ width: "30px" }}
+            />
+            <span className="align-middle menu-header">Menu</span>
           </button>
         </div>
         <div

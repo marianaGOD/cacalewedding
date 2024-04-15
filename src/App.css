@@ -230,6 +230,14 @@ line-height: 2;
 
 /* Adjustments for small screens */
 @media (max-width: 600px) {
+  .menu-header {
+    font-size: 25px;
+    color: white;
+    font-family: "Emmeline", sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+    padding-left: 10px;
+  }
   .rsvp-container {
     background-color: transparent !important;
     width: 100%;
@@ -245,7 +253,9 @@ line-height: 2;
     overflow-x: hidden; /* Prevent horizontal overflow */
   }
   #mainNavigation {
+    height: 180px;
     position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.01) 100%);
   }
   .route-container {
     margin-top: 10px !important;
