@@ -7,7 +7,12 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// Ensure these are imported to use Bootstrap components
+
+// images
+import cake_icon from "../assets/day-timeline/cake_1.png"
+import cocktail_icon from "../assets/day-timeline/cocktail_1.png"
+import dinner_icon from "../assets/day-timeline/dinner_1.png"
+import party_icon from "../assets/day-timeline/party_1.png"
 
 export default function BidDay() {
   function openExternalSite(url) {
@@ -36,7 +41,7 @@ export default function BidDay() {
             <div className="activities">
               <div className="activity">
                 <img
-                  src="src\assets\day-timeline\cake_1.png"
+                  src={cake_icon}
                   alt=""
                   className="timeline-img"
                 />
@@ -45,7 +50,7 @@ export default function BidDay() {
 
               <div className="activity">
                 <img
-                  src="src\assets\day-timeline\cocktail_1.png"
+                  src={cocktail_icon}
                   alt=""
                   className="timeline-img"
                 />
@@ -54,7 +59,7 @@ export default function BidDay() {
 
               <div className="activity">
                 <img
-                  src="src\assets\day-timeline\dinner_1.png"
+                  src={dinner_icon}
                   alt=""
                   className="timeline-img"
                   style={{
@@ -66,7 +71,7 @@ export default function BidDay() {
 
               <div className="activity">
                 <img
-                  src="src\assets\day-timeline\party_1.png"
+                  src={party_icon}
                   alt=""
                   className="timeline-img"
                 />

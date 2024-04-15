@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+
+// images
 import lettering from "../assets/images/lettering.png";
+import hambuguer from "../assets/icons/hamburguer_3.png";
 
 export default function TopBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +33,7 @@ export default function TopBar() {
             aria-expanded={isOpen}
           >
             <img
-              src="src\assets\icons\hamburguer_3.png"
+              src={hambuguer}
               alt=""
               style={{ width: "30px" }}
             />
