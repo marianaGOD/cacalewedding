@@ -47,8 +47,8 @@ function App() {
           ref={routeContainerRef}
           className="route-container"
           style={{
-            marginTop: `${topBarHeight + navBarHeight + 30}px`,
-            maxHeight: `calc(100vh - ${topBarHeight}px - 80px)`,
+            marginTop: `${topBarHeight + navBarHeight + 32}px`,
+            maxHeight: `calc(100vh - ${topBarHeight}px - 82px)`,
             overflow: "auto",
           }}
         >

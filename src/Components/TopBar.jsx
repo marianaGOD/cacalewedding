@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 
 // images
 import lettering from "../assets/images/lettering.png";
@@ -32,11 +32,7 @@ export default function TopBar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
           >
-            <img
-              src={hambuguer}
-              alt=""
-              style={{ width: "30px" }}
-            />
+            <img src={hambuguer} alt="" style={{ width: "30px" }} />
             <span className="align-middle menu-header">Menu</span>
           </button>
         </div>
@@ -48,32 +44,38 @@ export default function TopBar() {
         >
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/"
-                className="nav-link"
                 aria-current="page"
                 onClick={() => setIsOpen(!isOpen)}
+                className={({ isActive }) =>
+                  `${isActive ? "active" : "inactive"} nav-link`
+                }
               >
                 Início
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/historia"
-                className="nav-link"
+                className={({ isActive }) =>
+                  `${isActive ? "active" : "inactive"} nav-link`
+                }
                 onClick={() => setIsOpen(!isOpen)}
               >
                 A Nossa História
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/dia"
-                className="nav-link"
+                className={({ isActive }) =>
+                  `${isActive ? "active" : "inactive"} nav-link`
+                }
                 onClick={() => setIsOpen(!isOpen)}
               >
                 O Grande Dia
-              </Link>
+              </NavLink>
             </li>
             {/* 
             <li className="nav-item">
