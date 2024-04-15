@@ -230,6 +230,10 @@ line-height: 2;
 
 /* Adjustments for small screens */
 @media (max-width: 600px) {
+  .rsvp-container {
+    background-color: transparent !important;
+    width: 100%;
+  }
   .app-wrapper {
     position: relative; /* Needed to correctly position the pseudo-element */
     
