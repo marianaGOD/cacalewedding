@@ -68,6 +68,7 @@ export default function TopBar() {
                 O Grande Dia
               </Link>
             </li>
+            {/* 
             <li className="nav-item">
               <Link
                 to="/mais"
@@ -77,6 +78,7 @@ export default function TopBar() {
                 Saber Mais
               </Link>
             </li>
+            */}
           </ul>
         </div>
       </div>
